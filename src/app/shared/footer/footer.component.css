@@ -46,6 +46,10 @@ footer {
   display: flex;
   gap: 1rem;
 }
+.section_links a:hover{
+  scale: 1.2;
+  transition: 0.4s;
+}
 .titulo-footer {
   inline-size: max-content;
 
@@ -81,6 +85,11 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.getinTouch img:hover{
+  scale: 1.2;
+  transition: 0.3s;
+
 }
 #copyright {
   padding-bottom: 5px;
