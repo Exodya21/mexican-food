@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.2rem;
+  background-color: #d0dbcf41;
+
+  width: 100vw;
+
+  /* position: fixed;
+  top: 0; */
+}
+.logo {
+  max-width: 12rem;
+}
+.fa-solid, .fas {
+  color: white;
+}
+.navegation {
+  visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1.5rem;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #4e4d4d;
+
+  box-shadow: 0 0 0 100vmax rgba(53, 52, 52, 0.6);
+  padding: 1.2rem;
+
+  width: 150px;
+}
+.navegation.visible {
+  visibility: visible;
+}
+
+
+
+.container-btn {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+}
+.abrir-menu,
+.cerrar-menu {
+  display: block;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.abrir-menu {
+  color: #1c1c1c;
+}
+.cerrar-menu {
+  color: #ececec;
+}
+
+
+
+.navegation-list {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 0;
+}
+.navegation-list li {
+  text-align: center;
+}
+.navegation-list li a {
+  text-decoration: none;
+  color: white;
+}
+.navegation-list li a:hover {
+  color: rgb(198, 196, 196);
+}
+
+
+@media (min-width:600px) {
+  .navegation {
+      visibility: visible;
+      position: inherit;
+
+      display: block;
+
+      background-color: transparent;
+
+      box-shadow: none;
+      padding: 0;
+
+      width: 100%;
+  }
+  .abrir-menu, .container-btn {
+      display: none;
+  }
+  .navegation-list {
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+}
+
+@media (min-width:1300px) {
+  .navegation {
+    width: auto;
+  }
+  .navegation-list {
+      gap: 4rem;
+  }
+}
