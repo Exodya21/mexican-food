@@ -53,6 +53,7 @@ p {
 .titulo{
   text-align: center;
   font-weight: 700;
+  margin-bottom: 1rem;
   padding: 0.2rem;
   font-size: 1rem;
   color: #e5dd8f;
@@ -95,7 +96,7 @@ p {
 
 @media (min-width:1300px) {
   .contenedor-imagen {
-    height: 120vh;
+    height: 100%;
   }
 }
 
