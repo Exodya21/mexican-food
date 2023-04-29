@@ -1,19 +1,19 @@
 <footer>
   <div class="container_footer">
       <div class="our-restaurant">
-          <h3 class="titulo-footer">Our Restaurant</h3>
+          <h3 class="titulo-footer">{{data.footer.titulo}}</h3>
           <div class="section_links">
               <div>
-                  <a routerLink="/home" class="links-footer">Inicio</a>
-                  <a routerLink="/menu" class="links-footer">Menú</a>
-                  <a routerLink="/about" class="links-footer">Nosotros</a>
+                  <a routerLink="/{{lang}}/home" class="links-footer">{{data.footer.link_1}}</a>
+                  <a routerLink="/{{lang}}/menu" class="links-footer">{{data.footer.link_2}}</a>
+                  <a routerLink="/{{lang}}/about" class="links-footer">{{data.footer.link_3}}</a>
               </div>
-              <a class="links-footer" href="/DOC/Politica-de-Privacidad-TerminosYa-1679659322.pdf" >Privacy politics</a>
+              <a class="links-footer" href="/DOC/Politica-de-Privacidad-TerminosYa-1679659322.pdf" >{{data.footer.link_4}}</a>
           </div>
       </div>
 
       <div class="google_maps">
-          <p>C/ de Numància, 75, 08029 Barcelona</p>
+          <p>{{data.footer.direccion}}</p>
           <iframe
               class="mapa"
               style="border:0;"
@@ -29,7 +29,7 @@
 
 
       <div class="getinTouch">
-          <p class="titulo-footer">Get in Touch</p>
+          <p class="titulo-footer">{{data.footer.titulo_botones}}</p>
           <div>
               <a target="_blank" href="https://www.instagram.com/morgansmexicanfood/">
                   <img src="/assets/icons/insta.svg" alt="Icono Instagram">

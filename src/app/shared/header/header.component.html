@@ -1,5 +1,5 @@
 <header class="{{header_about || header}}">
-  <a href="/HTML/index.html">
+  <a routerLink="/{{lang}}/home">
       <img class="logo" src="/assets/img/logo-removido blanquito.png" alt="logo morgans">
   </a>
 
@@ -10,9 +10,13 @@
           <button class="cerrar-menu" id="cerrar"><i class="fa-sharp fa-solid fa-xmark"></i></button>
       </div>
       <ul class="navegation-list">
-          <li > <a routerLink="/home">Inicio</a> </li>
-          <li > <a routerLink="/menu">Menu</a> </li>
-          <li > <a routerLink="/about">Nosotros</a> </li>
+          <li > <a routerLink="/{{lang}}/home">{{data.header.inicio}}</a> </li>
+          <li > <a routerLink="/{{lang}}/menu">{{data.header.menu}}</a> </li>
+          <li > <a routerLink="/{{lang}}/about">{{data.header.nosotros}}</a> </li>
+
+          <li > <p (click)="langES()">ES</p> </li>
+          <li > <p (click)="langEN()">EN</p> </li>
+          <li > <p (click)="langCAT()">CAT</p> </li>
       </ul>
   </nav>
 </header>
