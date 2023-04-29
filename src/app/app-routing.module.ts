@@ -17,7 +17,7 @@ const routes: Routes = [
   {path: ':cat/menu', component: MenuComponent},
   {path: ':cat/about', component: AboutComponent},
 
-  {path: 'es/**', pathMatch:'full', redirectTo:'es/home'},
+  {path: '**', pathMatch:'full', redirectTo:'es/home'},
 ];
 
 @NgModule({
